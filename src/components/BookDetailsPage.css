@@ -1,0 +1,90 @@
+/* BookDetailsPage.css */
+.bookdetails-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ff8c00; /* Orange background */
+  padding: 20px;
+}
+
+.bookdetails-box {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 120px;
+}
+
+.book-details-content {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  align-items: center; /* Center the content vertically */
+}
+
+.book-image {
+  width: 300px; /* Increased size */
+  height: 450px; /* Increased height */
+  overflow: hidden;
+}
+
+.book-cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the whole image is visible without cropping */
+  border-radius: 8px;
+}
+
+.book-info {
+  text-align: left;
+}
+
+.book-info h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.book-info h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.book-info p {
+  font-size: 18px;
+  color: #666;
+}
+
+.book-info strong {
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.back-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  text-align: center; /* Ensure it's centered */
+}
+
+.back-btn:hover {
+  background-color: #388E3C;
+}

@@ -1,13 +1,174 @@
+/* Global Styles (index.css) */
 body {
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333333; /* Dark text for readability */
+  font-family: 'Roboto', sans-serif; /* Modern font */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Smooth fade-in on load */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: #ff8c00; /* Orange link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e67e00; /* Darker orange on hover */
+}
+
+/* General button styles */
+button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);  /* Slight scaling for interactivity */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header and Titles */
+h1, h2, h3 {
+  color: #333333; /* Dark text for headings */
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Footer or Other Elements with Borders */
+footer, .card, .book-card, .footer, .login-box {
+  border-color: #ff8c00; /* Orange border for consistency */
+}
+
+/* Specific Button Styles */
+.login-btn {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.login-btn:hover {
+  background-color: #e67e00;
+}
+
+.guest-btn {
+  background-color: #fff;
+  border: 2px solid #ff8c00;
+  color: #ff8c00;
+}
+
+.guest-btn:hover {
+  background-color: #ff8c00;
+  color: white;
+}
+
+.more-btn, .logout-btn, .back-btn {
+  background-color: #ff8c00;
+  color: white;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.more-btn:hover, .logout-btn:hover, .back-btn:hover {
+  background-color: #e67e00;
+}
+
+/* Navigation buttons */
+footer .back-btn, footer .logout-btn {
+  background-color: #ff8c00;
+  color: white;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+footer .back-btn:hover, footer .logout-btn:hover {
+  background-color: #e67e00;
+}
+
+/* Card or Container Styles */
+.card, .book-card, .login-box {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover, .book-card:hover, .login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer .sponsor-logo {
+  width: 50px;
+  height: auto;
+}
+
+footer .logout-btn {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer .logout-btn:hover {
+  background-color: #e63729;
+}
+
+input[type="text"], select {
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #ff8c00;
+}
+
+footer .back-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
 }

@@ -1,0 +1,18 @@
+/* Header.css or in your component-specific CSS file */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;  /* Adjust padding for better spacing */
+  }
+  
+  .app-logo {
+    width: 120px;  /* Adjust logo size */
+  }
+  
+  .fitting-image {
+    width: 150px;  /* Adjust image size */
+    height: auto;
+  }
+  

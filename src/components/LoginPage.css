@@ -1,0 +1,119 @@
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #ff8c00; /* Warm orange background */
+  padding: 20px;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.app-logo {
+  width: 120px; 
+  margin-bottom: 15px;
+}
+
+.fitting-image {
+  width: 150px;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form label {
+  font-size: 16px;
+  text-align: left;
+}
+
+.login-form input {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.login-form input:focus {
+  border-color: #ff8c00;
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-btn, .guest-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: #ff8c00; /* Orange for login button */
+  color: white;
+  border: none;
+}
+
+.login-btn:hover {
+  background-color: #e67e00;
+}
+
+.guest-btn {
+  background-color: #4CAF50; /* Green for guest button */
+  color: white;
+  border: none;
+}
+
+.guest-btn:hover {
+  background-color: #388E3C;
+}
+
+.error-message {
+  background-color: #f44336; /* Red background */
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
